@@ -13,7 +13,7 @@ class CategoryController
     {
         $categoryId = ($_GET['id'] ?? 0);
         $sort = $_GET['sort'] ?? 'date';
-        $page = ($_GET['page'] ?? 1);
+        $page = (int)($_GET['p'] ?? 1);
 
         if ($categoryId <= 0) {
             http_response_code(404);
