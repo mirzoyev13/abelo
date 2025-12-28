@@ -1,0 +1,5 @@
+/vendor
+/storage/cache/*
+/docker/db_data
+.env
+.DS_Store
